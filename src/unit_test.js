@@ -38,3 +38,8 @@ javacoin.minePendingTransactions('xavier-address');
 console.log('\nBalance of xavier is', javacoin.getBalanceOfAddress('xavier-address'));
 
 
+
+// Test 1: Blockchain Mechanics, adding block (push) to Genesis Block and hash for secure and No One Change Data Block
+// Test 2: Proof-Of-Work, Prevent Spam adding Block and revalidating hash to change data using Nonce and Difficulty
+// Test 3: Cryptocurrency coins, Incentivise Miners to validate transactions and add block
+// Test 4: Public Private Key, prove transaction made by owner and validation
