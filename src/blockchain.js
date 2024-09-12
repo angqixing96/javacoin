@@ -115,7 +115,15 @@ class Blockchain{
         ];
     }
 
-    createTransaction(transaction){
+    addTransaction(transaction){
+
+        if(!transaction.fromAddress || !transaction.toAddress){ // check to and from address are filled in for transaction
+            throw new Error('Transaction must include from and to address');
+        }
+
+        if(!transaction.isValid()){ // verify if transaction valid in first place
+            throw new Error('Cannot add invalid transaction to chain');
+        }
         this.pendingTransactions.push(transaction);
     }
 
@@ -139,8 +147,11 @@ class Blockchain{
     isChainValid(){
         for(let i = 1; i < this.chain.length; i++){
             const currentBlock = this.chain[i];
-            const previousBlock = this.chain[i - 1];
+            const previousBlock = this.chain[i - 1]; // goes through every block and transaction
 
+            if(!currentBlock.hasValidTransaction()){ // if not all transaction are valid, it is false
+                return false;
+            }
             if(currentBlock.hash !== currentBlock.calculateHash()){ // if data change, recalculate hash is different output
                 return false;
             }
