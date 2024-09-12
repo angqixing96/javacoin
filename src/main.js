@@ -14,4 +14,4 @@ javacoin.addTransaction(tx1);
 console.log('\n Starting the miner ...');
 javacoin.minePendingTransactions(myWalletAddress);
 
-console.log('\n Balance of xavier is', javacoin.getBalanceOfAddress(myWalletAddress))
+console.log('\n Balance of xavier guy is', javacoin.getBalanceOfAddress(myWalletAddress))
