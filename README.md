@@ -11,6 +11,19 @@ Blockchain mechanics
 2. Hash current Block and input Previous Hash of Previous Block into current Block
 3. Push Block to Current Chain of Block (Or Genesis Block) with the Hash to chain them
 
+```mermaid
+graph LR
+A[Genesis Block] --> B((PreviousHash))
+A[Genesis Block] --> C((BlockHash))
+A[Genesis Block] --> D((Timestamp))
+A[Genesis Block] --> E((Data))
+B --> F
+C --> F[Block1]
+D --> F
+E --> F
+```
+
+
 ## Issues to solve:
 A. Too many block pushes at once by changing hash, and chaining them
 B. No Incentives for Miners to validate and hash
