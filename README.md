@@ -35,7 +35,7 @@ C. If there is no private key to sign the transaction, unable to validate
 2. By signing hash of the block using private key, miners able to verify using public key
 
 ## Further Issues and Possible Solutions:
-1. Although Proof Of Work helps increase difficulty barriers to change whole blockchain data, Wealthy Miners with supercomputers and Grouping together into Mining Pools might happen
-2. Supercomputers from large groups have higher chances of finding Right Hash to meet difficulty target
-3. Proof Of Stake could solve it, miner is randomly chosen to mine and validate. Noone fights with you to validate anymore based on computational power
-4. Less unfair since election process, although Miners with more stake have higher chances of being chosen
+* Although Proof Of Work helps increase difficulty barriers to change whole blockchain data, Wealthy Miners with supercomputers and Grouping together into Mining Pools might happen
+* Supercomputers from large groups have higher chances of finding Right Hash to meet difficulty target
+* Proof Of Stake could solve it, miner is randomly chosen to mine and validate. Noone fights with you to validate anymore based on computational power
+* Less unfair since election process, although Miners with more stake have higher chances of being chosen
