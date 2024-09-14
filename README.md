@@ -29,7 +29,7 @@ A. Too many block pushes at once by changing hash, and chaining them
 B. No Incentives for Miners to validate and hash
 C. Anyone can validate anyone transaction if there's no identity
 
-## Solutions provided:
+## Solutions & Next Steps:
 
 A. If there are too many blocks being pushed, we must limit that
 1. Proof Of Work via Mining
